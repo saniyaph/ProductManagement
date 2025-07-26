@@ -58,11 +58,11 @@ product_mgmt/
    ```bash
    git clone https://github.com/your-username/product_mgmt.git
    cd product_mgmt
+   
 2. **Install dependencies**
-  ```bash
-  npm install
+   npm install
+
 3. **Run the app**
-   ```bash
    node app.js
 
 
