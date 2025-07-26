@@ -60,9 +60,11 @@ product_mgmt/
    cd product_mgmt
    
 2. **Install dependencies**
+
    npm install
 
-3. **Run the app**
+4. **Run the app**
+
    node app.js
 
 
