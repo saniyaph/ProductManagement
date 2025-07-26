@@ -49,22 +49,26 @@ product_mgmt/
 ├── app.js
 └── README.md
 
-
 ---
 
 ## ⚙️ Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/your-username/product_mgmt.git
    cd product_mgmt
-   
+
+   ```
+
 2. **Install dependencies**
 
+   ```bash
    npm install
 
-4. **Run the app**
+   ```
 
+3. **Run the app**
+   ```bash
    node app.js
-
-
+   ```
