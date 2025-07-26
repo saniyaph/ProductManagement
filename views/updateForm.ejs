@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Update Product</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body class="bg-light">
+    <main class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+          <div class="card shadow-lg border-0">
+            <div class="card-header bg-primary text-white text-center">
+              <h4>Update Product</h4>
+            </div>
+            <div class="card-body">
+              <form
+                action="/update/<%= product._id %>?_method=PATCH"
+                method="post"
+              >
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="name"
+                    value="<%= product.name %>"
+                    id="formName"
+                    placeholder="Name"
+                  />
+                  <label for="formName">Name</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="category"
+                    value="<%= product.category %>"
+                    id="formCategory"
+                    placeholder="Category"
+                  />
+                  <label for="formCategory">Category</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="price"
+                    value="<%= product.price %>"
+                    id="formPrice"
+                    placeholder="Price"
+                  />
+                  <label for="formPrice">Price</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="quantity"
+                    value="<%= product.quantity %>"
+                    id="formQuantity"
+                    placeholder="Quantity"
+                  />
+                  <label for="formQuantity">Quantity</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="desc"
+                    value="<%= product.desc %>"
+                    id="formDesc"
+                    placeholder="Description"
+                  />
+                  <label for="formDesc">Description</label>
+                </div>
+
+                <div class="d-grid">
+                  <button type="submit" class="btn btn-primary">
+                    Update Product
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
